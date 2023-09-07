@@ -1,0 +1,28 @@
+.logo {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 8px;
+  column-gap: 8px;
+}
+
+.logo img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.logo h1 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+@media only screen and (max-width: 768px) {
+  .logo img {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .logo h1 {
+    font-size: 1rem;
+  }
+}

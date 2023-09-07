@@ -1,0 +1,32 @@
+import { toast } from "react-toastify";
+import { storage } from "../firebase.config";
+import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
+
+export const uploadImage = async (...args) => {
+  return new Promise(async (resolve) => {
+    try {
+      const [path, formData, setProgress] = args;
+      const storageRef = ref(storage, path);
+      const uploadTask = uploadBytesResumable(storageRef, formData.file);
+      uploadTask.on(
+        "state_changed",
+        (snapshot) => {
+          const progress = Math.round(
+            (snapshot.bytesTransferred / snapshot.totalBytes) * 100
+          );
+
+          setProgress(progress);
+        },
+        (error) => {
+          toast.error(error);
+        },
+        async () => {
+          const downloadUrl = await getDownloadURL(uploadTask.snapshot.ref);
+          resolve(downloadUrl);
+        }
+      );
+    } catch (error) {
+      toast.error(error);
+    }
+  });
+};

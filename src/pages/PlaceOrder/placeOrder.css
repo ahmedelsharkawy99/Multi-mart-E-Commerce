@@ -1,0 +1,18 @@
+.order__details .card {
+  background-color: var(--primary-color) !important;
+  color: #fff !important;
+}
+
+.order__details h2 {
+  font-size: 1.6rem;
+}
+
+.card table.table {
+  color: #fff !important;
+}
+
+@media only screen and (max-width: 768px) {
+  .order__details h2 {
+    font-size: 1.3rem;
+  }
+}

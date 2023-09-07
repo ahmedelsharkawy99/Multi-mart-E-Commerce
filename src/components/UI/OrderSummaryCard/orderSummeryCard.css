@@ -1,0 +1,22 @@
+.checkout_card {
+  padding: 20px;
+  background-color: var(--primary-color);
+  color: #fff;
+  border-radius: 5px;
+}
+
+.checkout_card h4,
+.checkout_card h6 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.checkout_card h6 {
+  margin-bottom: 20px;
+}
+
+.checkout_card h4 {
+  border-top: 1px solid rgb(221, 221, 221, 0.253);
+  padding-top: 20px;
+}
