@@ -1,0 +1,40 @@
+.auth__from {
+  background: var(--primary-color);
+  padding: 40px;
+  border-radius: 5px;
+}
+
+.auth__btn {
+  font-weight: 600;
+}
+
+.form__group span {
+  top: 8px;
+  right: 15px;
+  cursor: pointer;
+  color: inherit !important;
+}
+.form__group span i {
+  width: 100%;
+  height: 100%;
+}
+
+.form__group input {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 8px 20px;
+  border-radius: 5px;
+}
+
+.auth__from input[type="file"] {
+  color: #fff;
+}
+
+.auth__from p {
+  margin-top: 30px;
+}
+
+.auth__from p a {
+  color: rgba(255, 255, 255, 0.735);
+}

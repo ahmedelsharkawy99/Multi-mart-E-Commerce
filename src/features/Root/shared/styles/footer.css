@@ -1,0 +1,38 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 30px;
+  background: var(--primary-color);
+}
+
+.footer__text {
+  line-height: 30px;
+}
+.quick__links-title {
+  font-size: 1.1rem;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.footer__quick-links ul li {
+  background: transparent !important;
+}
+
+.footer__text,
+.footer__quick-links ul li a,
+.footer__contact li,
+.footer__copyright {
+  color: rgb(255, 255, 255, 0.7) !important;
+}
+
+.footer__contact a,
+.footer__contact address {
+  font-size: 0.9rem !important;
+}
+
+.footer__contact li span {
+  font-size: 1.2rem;
+}
+
+.footer__copyright {
+  font-size: 0.9rem;
+  margin-top: 50px;
+}
