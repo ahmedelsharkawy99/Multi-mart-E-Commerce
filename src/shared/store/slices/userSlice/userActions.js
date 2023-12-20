@@ -10,7 +10,7 @@ import {
 } from "../../../services/handlers/auth";
 import { getUser, setUser } from "../../../services/handlers/firestore";
 import { uploadImage } from "../../../services/handlers/storage";
-import { userImagePlaceholders } from "../../../utils/helpers";
+import { compressImages, userImagePlaceholders } from "../../../utils/helpers";
 
 export const userLogin = (data) => {
   return async (dispatch) => {
@@ -35,14 +35,16 @@ export const userSignup = (data, setProgress) => {
     if (!data.file) {
       const imageFile = await userImagePlaceholders(userPic);
       data.file = imageFile;
-      console.log(data.file);
     }
+
+    const compressedImage = await compressImages(data.file, 80, 80, 0.8);
 
     const downloadUrl = await uploadImage(
       `images/${Date.now() + data.username}`,
-      data,
+      compressedImage,
       setProgress
     );
+
     const user = await signup(data, downloadUrl);
     await setUser(user, downloadUrl);
 

@@ -5,6 +5,8 @@ import { useDispatch } from "react-redux";
 import "./productCard.css";
 import { cartActions } from "../../store/slices/cartSlice/cartSlice";
 
+import Image from "../Image/Image";
+
 const ProductCard = ({ item }) => {
   const dispatch = useDispatch();
 
@@ -21,11 +23,19 @@ const ProductCard = ({ item }) => {
     <div className="mb-2 col-lg-3 col-md-4">
       <div className="product__item">
         <div className="product__img">
-          <motion.img
-            whileHover={{ scale: 0.9 }}
-            src={item.image}
+          <Image
             alt={item.title}
-            loading="lazy"
+            whileHover={{ scale: 0.9 }}
+            srcSet={`${item.image} 320w,
+                     ${item.image} 480w,
+                     ${item.image} 800w`}
+            sizes="(max-width: 320px) 296px,
+                   (max-width: 480px) 400px,
+                   (max-width: 575px) 551px,
+                   (max-width: 768px) 516px,
+                   (max-width: 1200px) 216px,
+                   (max-width: 1440px) 261px,
+                                      306px"
           />
         </div>
         <div className="p-2 product__info">
