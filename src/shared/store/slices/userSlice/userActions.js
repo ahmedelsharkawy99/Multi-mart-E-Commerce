@@ -40,7 +40,7 @@ export const userSignup = (data, setProgress) => {
     const compressedImage = await compressImages(data.file, 80, 80, 0.8);
 
     const downloadUrl = await uploadImage(
-      `images/${Date.now() + data.username}`,
+      `images/users/${data.email}/${data.username}`,
       compressedImage,
       setProgress
     );
