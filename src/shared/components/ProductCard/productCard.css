@@ -28,12 +28,12 @@
   color: var(--primary-color);
 }
 
-.product__item-bottom span i {
-  font-size: 1.2rem;
+.product__item-bottom span svg {
+  width: 30px;
   background-color: var(--primary-color);
   padding: 5px;
   border-radius: 50px;
-  color: #fff;
+  fill: #fff;
   cursor: pointer;
 }
 
@@ -46,8 +46,5 @@
 @media only screen and (max-width: 768px) {
   .product__info h3 a {
     font-size: 1rem;
-  }
-  .product__item-bottom span i {
-    font-size: 1.1rem;
   }
 }

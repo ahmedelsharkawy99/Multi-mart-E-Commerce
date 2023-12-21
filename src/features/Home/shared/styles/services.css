@@ -7,13 +7,12 @@
   cursor: pointer;
 }
 
-.services__item span i {
-  font-size: 2.2rem;
-  font-weight: 400 !important;
-  color: #fff;
+.services__item span {
+  width: 55px;
+  height: 55px;
+  border-radius: 50px;
   background: var(--primary-color);
   padding: 10px;
-  border-radius: 50px;
 }
 
 .services__item h3 {
@@ -44,12 +43,12 @@
   }
 }
 
-@media only screen and (max-width: 768px) {
+/* @media only screen and (max-width: 768px) {
   .services__item span i {
     font-size: 1.5rem;
     padding: 5px;
   }
-}
+} */
 
 @media only screen and (max-width: 576px) {
   .services__item {

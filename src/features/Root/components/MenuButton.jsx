@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
+import Close from "../../../shared/components/Icons/Close";
+import Menu from "../../../shared/components/Icons/Menu";
 
 const MenuButton = ({ onClick, isOpen }) => {
   const [contentIsLoaded, setContentIsLoaded] = useState(false);
@@ -11,13 +13,7 @@ const MenuButton = ({ onClick, isOpen }) => {
     contentIsLoaded &&
     createPortal(
       <div className="mobile__menu">
-        <span onClick={onClick}>
-          {isOpen ? (
-            <i className="ri-close-line"></i>
-          ) : (
-            <i className="ri-menu-line"></i>
-          )}
-        </span>
+        <span onClick={onClick}>{isOpen ? <Close /> : <Menu />}</span>
       </div>,
       document.querySelector(".nav__icons")
     )

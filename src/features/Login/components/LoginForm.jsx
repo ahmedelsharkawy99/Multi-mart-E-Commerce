@@ -6,6 +6,8 @@ import { Form, Link, useNavigate } from "react-router-dom";
 import SessionStorageService from "../../../shared/storage/sessionStorage";
 import { userLogin } from "../../../shared/store/slices/userSlice/userActions";
 
+import Show from "../../../shared/components/Icons/Show";
+import Hide from "../../../shared/components/Icons/Hide";
 import Spinner from "../../../shared/components/Spinner/Spinner";
 import CustomInput from "../../../shared/components/CustomInput/CustomInput";
 
@@ -20,7 +22,7 @@ const LoginForm = () => {
   });
 
   const type = visible ? "text" : "password";
-  const icon = !visible ? "eye" : "eye-off";
+  const icon = !visible ? Show : Hide;
 
   const changeHandler = (e) =>
     setFormData((prevState) => ({
@@ -57,7 +59,7 @@ const LoginForm = () => {
 
       <CustomInput
         containerClass="position-relative"
-        icon={`ri-${icon}-line`}
+        icon={icon}
         onIconClick={toggleVisibilty}
         required
         type={type}

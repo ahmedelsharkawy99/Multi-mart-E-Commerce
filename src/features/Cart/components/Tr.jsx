@@ -4,6 +4,7 @@ import { useDispatch } from "react-redux";
 import { cartActions } from "../../../shared/store/slices/cartSlice/cartSlice";
 
 import Image from "../../../shared/components/Image/Image";
+import Delete from "../../../shared/components/Icons/Delete";
 
 const Tr = ({ item }) => {
   const dispatch = useDispatch();
@@ -39,8 +40,10 @@ const Tr = ({ item }) => {
         <motion.span
           onClick={() => dispatch(cartActions.removeItem(item.id))}
           whileTap={{ scale: 1.2 }}
+          className="w-25 d-block"
+          role="button"
         >
-          <i className="ri-delete-bin-line"></i>
+          <Delete />
         </motion.span>
       </td>
     </tr>

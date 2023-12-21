@@ -40,9 +40,6 @@ const Footer = () => {
             className="footer__contact"
           >
             <li className="ps-0 border-0 d-flex align-items-center gap-2 list-group-item">
-              <span className="align-self-start">
-                <i className="ri-map-pin-line"></i>
-              </span>
               <address>
                 ATTN: Dennis Menees, CEO Global Co. 90210 Broadway Blvd.
                 Nashville, TN 37011-5678
@@ -50,16 +47,10 @@ const Footer = () => {
             </li>
 
             <li className="ps-0 border-0 d-flex align-items-center gap-2 list-group-item">
-              <span>
-                <i className="ri-phone-line"></i>
-              </span>
               <a href="tel:+201099695674">+201099695674</a>
             </li>
 
             <li className="ps-0 border-0 d-flex align-items-center gap-2 list-group-item">
-              <span>
-                <i className="ri-mail-line"></i>
-              </span>
               <a href="mailto:aelsharkawy428@gmail.com">
                 aelsharkawy428@gmail.com
               </a>

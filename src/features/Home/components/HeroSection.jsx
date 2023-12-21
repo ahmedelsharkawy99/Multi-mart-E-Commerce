@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
-import heroImage from "../../../assets/images/hero-img.png";
+import heroImage from "../../../assets/images/hero-img.webp";
 import SectionContainer from "../../../shared/components/SectionContainer/SectionContainer";
 import Image from "../../../shared/components/Image/Image";
 

@@ -54,8 +54,8 @@ a {
 
 img {
   width: 100%;
-  aspect-ratio: 1.5;
   object-fit: contain;
+  aspect-ratio: 1;
 }
 
 section {

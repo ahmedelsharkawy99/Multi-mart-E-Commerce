@@ -6,12 +6,13 @@ const CustomInput = ({
   ...props
 }) => {
   const As = as;
+  const Icon = icon;
   return (
     <div className={`form__group mb-3 ${containerClass}`}>
       <As {...props} />
       {icon && (
         <span className="position-absolute" onClick={onIconClick}>
-          <i className={icon}></i>
+          <Icon />
         </span>
       )}
     </div>

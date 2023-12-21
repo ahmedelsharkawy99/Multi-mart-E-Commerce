@@ -70,10 +70,10 @@
   cursor: pointer;
 }
 
-.nav__icons span i,
+.nav__icons span svg,
 .mobile__menu {
-  font-size: 1.4rem;
-  color: var(--primary-color);
+  font-size: 30px;
+  fill: var(--primary-color);
 }
 
 .fav__icon,
@@ -141,9 +141,8 @@
     justify-content: center;
   }
 
-  .fav__icon i,
-  .cart__icon i {
-    font-size: 1.2rem !important;
+  .cart__icon svg {
+    width: 24px;
   }
 
   .badge {

@@ -11,7 +11,6 @@ import App from "./App.jsx";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <PayPalScriptProvider
-      deferLoading={true}
       options={{
         clientId: import.meta.env.VITE_PAYPAL_CLIENT_ID,
       }}

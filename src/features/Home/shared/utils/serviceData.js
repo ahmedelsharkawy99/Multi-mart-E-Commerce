@@ -1,24 +1,29 @@
+import bankGuarantee from "../../../../assets/icons/money-back.svg";
+import easyReturn from "../../../../assets/icons/return-svgrepo-com.svg";
+import freeShipping from "../../../../assets/icons/free-shipping.svg";
+import securePayment from "../../../../assets/icons/secure-payment.svg";
+
 const serviceData = [
   {
-    icon: "ri-truck-line",
+    icon: freeShipping,
     title: "Free Shipping",
     subtitle: "Lorem ipsum dolor sit amet.",
     bg: "#fdefe6",
   },
   {
-    icon: "ri-refresh-line",
+    icon: easyReturn,
     title: "Easy Returns",
     subtitle: "Lorem ipsum dolor sit amet.",
     bg: "#ceebe9",
   },
   {
-    icon: "ri-secure-payment-line",
+    icon: securePayment,
     title: "Secure Payment",
     subtitle: "Lorem ipsum dolor sit amet.",
     bg: "#e2f2b2",
   },
   {
-    icon: "ri-exchange-dollar-line",
+    icon: bankGuarantee,
     title: " Back Guarantee",
     subtitle: "Lorem ipsum dolor sit amet.",
     bg: "#d6e5fb",

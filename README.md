@@ -1,6 +1,6 @@
 # Multi-mart-E-Commerce Website Readme
 
-This readme provides an overview of the e-commerce website built using React.js, Firebase, Remix Icons, React Router, Redux, Bootstrap, Framer Motion, React Toastify, and PayPal for checkout.
+This readme provides an overview of the e-commerce website built using React.js, Firebase, React Router, Redux, Bootstrap, Framer Motion, React Toastify, and PayPal for checkout.
 
 Live Demo: https://maltimart-ecommerce-two.vercel.app/
 
@@ -17,7 +17,7 @@ Live Demo: https://maltimart-ecommerce-two.vercel.app/
 
 ## Introduction
 
-The e-commerce website is a fully functional online store developed using React.js. It provides a user-friendly interface for customers to browse and purchase products. The website integrates with Firebase for authentication, storage, and database functionalities. Remix Icons are used to enhance the visual appeal of the user interface. React Router enables smooth navigation between different pages. Redux is used for state management, ensuring a consistent user experience. Bootstrap provides a responsive and stylish design. Framer Motion adds fluid animations to enhance the user interface. React Toastify displays informative notifications. PayPal is integrated to facilitate secure and seamless checkout.
+The e-commerce website is a fully functional online store developed using React.js. It provides a user-friendly interface for customers to browse and purchase products. The website integrates with Firebase for authentication, storage, and database functionalities. React Router enables smooth navigation between different pages. Redux is used for state management, ensuring a consistent user experience. Bootstrap provides a responsive and stylish design. Framer Motion adds fluid animations to enhance the user interface. React Toastify displays informative notifications. PayPal is integrated to facilitate secure and seamless checkout.
 
 ## Features
 
@@ -35,7 +35,6 @@ The e-commerce website utilizes the following technologies:
 
 - React.js: A JavaScript library for building user interfaces.
 - Firebase: A comprehensive platform for building web and mobile applications, providing authentication, storage, and database services.
-- Remix Icons: A collection of open-source icons for web projects.
 - React Router: A library for declarative routing in React applications.
 - Redux: A predictable state container for JavaScript apps.
 - Bootstrap: A popular CSS framework for building responsive and visually appealing websites.

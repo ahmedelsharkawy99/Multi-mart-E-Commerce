@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 
-import "../shared/styles/cart.css";
 import { tableTitles } from "../shared/utils/tableTitles";
 
 import CartCard from "../components/CartCard";

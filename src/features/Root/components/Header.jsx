@@ -8,6 +8,7 @@ import Logo from "./Logo";
 import HeaderDropdown from "./HeaderDropdown";
 import HeaderNavLinks from "./HeaderNavLinks";
 import useAnimateStickyHeader from "../shared/hooks/useAnimateStickyHeader";
+import Cart from "../../../shared/components/Icons/Cart";
 
 const Header = () => {
   const navigate = useNavigate();
@@ -28,7 +29,7 @@ const Header = () => {
           <HeaderNavLinks key={pathname} />
           <div className="nav__icons">
             <span className="cart__icon" onClick={navigateToCart}>
-              <i className="ri-shopping-bag-line"></i>
+              <Cart />
               <motion.span
                 key={totalQuantity}
                 whileInView={{ rotate: "360deg" }}

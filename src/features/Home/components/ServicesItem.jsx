@@ -1,4 +1,7 @@
 import { motion } from "framer-motion";
+
+import Image from "../../../shared/components/Image/Image";
+
 const ServicesItem = ({ item }) => {
   return (
     <div className="col-md-4 col-lg-3">
@@ -7,8 +10,8 @@ const ServicesItem = ({ item }) => {
         className="services__item"
         style={{ background: item.bg }}
       >
-        <span>
-          <i className={item.icon}></i>
+        <span className="d-flex align-items-center justify-content-center">
+          <Image srcSet={item.icon} alt={item.title} />
         </span>
         <div>
           <h3>{item.title}</h3>
